@@ -23,8 +23,6 @@ Warning to Code Thieves:
 ✅ Be an ethical hacker. Respect developers' efforts and give credit where it’s due.
 */
 
-// displays the main menu and prompts user for a numeric selection
-
 const readline = require('readline');
 const ui = require('./banner');
 

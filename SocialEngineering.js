@@ -23,7 +23,6 @@ Warning to Code Thieves:
 ✅ Be an ethical hacker. Respect developers' efforts and give credit where it’s due.
 */
 
-
 const { printBanner ,clearScreen } = require('./includes/banner');
 const menu = require('./includes/menu');
 const phishing = require('./includes/phishing');

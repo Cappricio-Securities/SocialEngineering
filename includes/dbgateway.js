@@ -25,7 +25,6 @@ Warning to Code Thieves:
 
 // simple JSON-backed database gateway
 // provides the same functionality that earlier lived inside phishing.js
-
 const fs = require('fs');
 const path = require('path');
 

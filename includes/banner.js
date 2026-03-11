@@ -23,7 +23,7 @@ Warning to Code Thieves:
 ✅ Be an ethical hacker. Respect developers' efforts and give credit where it’s due.
 */
 
-// user interface helpers (banner, menus, status text)
+
 const chalk = require('chalk');
 
 // colour shortcuts

@@ -24,7 +24,6 @@ Warning to Code Thieves:
 */
 
 
-
 const readline = require('readline');
 const chalk = require('chalk');
 const ora = require('ora');

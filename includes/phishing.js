@@ -23,8 +23,6 @@ Warning to Code Thieves:
 ✅ Be an ethical hacker. Respect developers' efforts and give credit where it’s due.
 */
 
-// handles the "Start Phishing Attack" flow described by the user
-
 const os = require('os');
 const path = require('path');
 const fs = require('fs');

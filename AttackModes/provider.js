@@ -23,7 +23,6 @@ Warning to Code Thieves:
 ✅ Be an ethical hacker. Respect developers' efforts and give credit where it’s due.
 */
 
-
 const fs = require('fs');
 const axios = require('axios');
 

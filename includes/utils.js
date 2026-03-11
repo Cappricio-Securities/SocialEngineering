@@ -23,7 +23,6 @@ Warning to Code Thieves:
 ✅ Be an ethical hacker. Respect developers' efforts and give credit where it’s due.
 */
 
-// miscellaneous utility helpers used across modules
 
 function spinner(text, duration = 5000) {
     return new Promise((resolve) => {

@@ -23,8 +23,6 @@ Warning to Code Thieves:
 ✅ Be an ethical hacker. Respect developers' efforts and give credit where it’s due.
 */
 
-
-
 const readline = require('readline');
 const chalk = require('chalk');
 const ora = require('ora');
