@@ -1,0 +1,20 @@
+{
+  "name": "socialengineering",
+  "version": "1.0.0",
+  "description": "Social engineering simulation toolkit for cybersecurity education",
+  "main": "SocialEngineering.js",
+  "bin": {
+    "SocialEngineering": "SocialEngineering.js"
+  },
+  "scripts": {
+    "start": "node SocialEngineering.js"
+  },
+  "author": "@karthithehacker",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "uuid": "^9.0.0"
+  }
+}
