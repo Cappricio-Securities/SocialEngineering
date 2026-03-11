@@ -65,7 +65,7 @@ SocialEngineering/
 1. Clone the repository:
 
 ```bash
-npm install SocialEngineering -g
+npm install socialengineering -g
 ```
 
 

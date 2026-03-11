@@ -1,16 +1,61 @@
 {
   "name": "socialengineering",
   "version": "1.0.0",
-  "description": "Social engineering simulation toolkit for cybersecurity education",
+  "description": "Social Engineering Toolkit CLI for cybersecurity education, ethical hacking simulations, phishing awareness, and penetration testing training. A command line tool for red team exercises and security awareness labs.",
   "main": "SocialEngineering.js",
   "bin": {
-    "SocialEngineering": "SocialEngineering.js"
-  },
+  "socialengineering": "SocialEngineering.js",
+  "social-engineering": "SocialEngineering.js",
+  "socialeng": "SocialEngineering.js",
+  "se-toolkit": "SocialEngineering.js"
+},
+  "preferGlobal": true,
   "scripts": {
     "start": "node SocialEngineering.js"
   },
-  "author": "@karthithehacker",
+  "keywords": [
+    "social engineering",
+    "social engineering toolkit",
+    "ethical hacking",
+    "cybersecurity",
+    "security awareness",
+    "penetration testing",
+    "red team",
+    "phishing simulation",
+    "security training",
+    "cyber attack simulation",
+    "ethical hacking tools",
+    "security research",
+    "cybersecurity cli",
+    "ai security tools",
+    "generative ai security",
+    "cybersecurity education",
+    "security testing tool",
+    "open source cybersecurity",
+    "cybersecurity learning",
+    "hacking simulation"
+  ],
+  "author": {
+    "name": "Karthi The Hacker",
+    "url": "https://cappriciosec.com"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cappricio-Securities/SocialEngineering"
+  },
+  "homepage": "https://github.com/Cappricio-Securities/SocialEngineering",
+  "bugs": {
+    "url": "https://github.com/Cappricio-Securities/SocialEngineering/issues"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "SocialEngineering.js",
+    "Attackmode/",
+    "includes/"
+  ],
   "dependencies": {
     "axios": "^1.13.6",
     "chalk": "^4.1.2",
