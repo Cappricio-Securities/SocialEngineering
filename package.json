@@ -1,6 +1,6 @@
 {
   "name": "socialengineering",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Social Engineering Toolkit CLI for cybersecurity education, ethical hacking simulations, phishing awareness, and penetration testing training. A command line tool for red team exercises and security awareness labs.",
   "main": "SocialEngineering.js",
   "bin": {
@@ -53,7 +53,7 @@
   },
   "files": [
     "SocialEngineering.js",
-    "Attackmode/",
+    "Attackmodes/",
     "includes/"
   ],
   "dependencies": {
