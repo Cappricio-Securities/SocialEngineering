@@ -2,6 +2,7 @@
 
 A powerful social engineering toolkit that automates phishing, OTP/email bombing, fake mail and more — built with ❤️ by [@karthithehacker](https://karthithehacker.com)
 
+![Main Menu](https://raw.githubusercontent.com/karthi-the-hacker/SocialEngineer/4982e91213338b6425de2379654786c8fa38cfc3/images/social-engineer.png)
 > ⚠️ For educational use only. Do **not** use this tool against anyone without explicit permission.
 
 ---
@@ -28,11 +29,7 @@ A powerful social engineering toolkit that automates phishing, OTP/email bombing
   * `socket.io`
   * `uuid`
 
-Install dependencies with:
 
-```bash
-npm install
-```
 
 ---
 
@@ -68,28 +65,36 @@ SocialEngineering/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/karthi-the-hacker/SocialEngineer.git
-cd SocialEngineer
+npm install SocialEngineering -g
 ```
 
-2. Install Node.js dependencies:
-
-```bash
-npm install
-chmod +x SocialEngineering.js   # optional make CLI executable
-```
 
 ### 📌 Running the tool
 
 ```bash
-node SocialEngineering.js
-# or if installed as bin
-./SocialEngineering.js
+
+SocialEngineering
 ```
 
 Sample menu:
 
 ```
+
+███████╗ ██████╗  ██████╗██╗ █████╗ ██╗
+██╔════╝██╔═══██╗██╔════╝██║██╔══██╗██║
+███████╗██║   ██║██║     ██║███████║██║
+╚════██║██║   ██║██║     ██║██╔══██║██║
+███████║╚██████╔╝╚██████╗██║██║  ██║███████╗
+╚══════╝ ╚═════╝  ╚═════╝╚═╝╚═╝  ╚═╝╚══════╝
+
+███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗███████╗██████╗ ██╗███╗   ██╗ ██████╗
+██╔════╝████╗  ██║██╔════╝ ██║████╗  ██║██╔════╝██╔════╝██╔══██╗██║████╗  ██║██╔════╝
+█████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗  █████╗  ██████╔╝██║██╔██╗ ██║██║  ███╗
+██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝  ██╔══╝  ██╔══██╗██║██║╚██╗██║██║   ██║
+███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗███████╗██║  ██║██║██║ ╚████║╚██████╔╝
+╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝
+
+                                                           Website: cappriciosec.com
             Main Menu             
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ No. ┃ Option                     ┃
@@ -109,12 +114,55 @@ Sample menu:
 
 * Phantom `templates/` folder is used by phishing module; you can add new templates following the structure:
   ```
-  templates/
-  ├── yourtemplatename/
-      ├── index.html
-      └── index.css
+
+  ~/SocialEngineering-Templates/
+     ├── yourtemplatename/
+         ├── index.html
+         └── index.css
   ```
 * The phishing server will serve files from the selected template and capture credentials via `/login`.
+
+---
+
+
+## 🧪 Example Fake Login Template (HTML)
+
+### `index.html`
+
+```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>XYZ Admin Login</title>
+      <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <form action="/login" method="post" class="login-box">
+        <h2>Login</h2>
+        <input type="text" name="username" placeholder="Username or Email" required>
+        <input type="hidden" name="type" value="xyz"></input>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+        <div class="note">fake template</div>
+      </form>
+    </body>
+    </html>
+```
+
+
+## 📡 Phishing Portal Endpoint
+
+The `login.php` endpoint receives credentials from fake  login pages (templates). When a user submits the login form, the server captures the following parameters:
+
+### 📥 POST `/login`
+
+| Parameter  | Type     | Description            |
+|------------|----------|------------------------|
+| `username` | `string` | **Required.** Username or email entered by the user |
+| `password` | `string` | **Required.** Password entered by the user |
+| `type` | `string` | **Required.** Template name set by developer |
+
 
 ---
 
