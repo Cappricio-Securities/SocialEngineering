@@ -30,7 +30,6 @@ const phishing = require('./includes/phishing');
 const otpBombing = require('./AttackModes/otpBombing');
 const emailBombing = require('./AttackModes/emailBombing');
 const emailSpoofing = require('./AttackModes/emailSpoofing');
-const keylogger = require('./AttackModes/keylogger');
 
 async function main() {
     // show the banner once at startup
@@ -53,12 +52,9 @@ async function main() {
                     await otpBombing.run();
                     break;
                 case '3':
-                    await keylogger.run();
-                    break;
-                case '4':
                     await emailBombing.run();
                     break;
-                case '5':
+                case '4':
                     await emailSpoofing.run();
                     break;
                 default:
